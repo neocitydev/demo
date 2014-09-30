@@ -1,0 +1,19 @@
+<ion-view title="Number Urgences">
+  
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-loop"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+   <div class="list">
+      <ion ng-repeat="numberUrgence in numberUrgences" >
+       <div class="item item-button-right">
+        {{numberUrgence.title}}
+          <button class="button button-positive">
+            <i class="icon ion-ios7-telephone"></i>
+          </button>
+        </div>
+        
+      </ion>
+    </div>
+  </ion-content>
+</ion-view>

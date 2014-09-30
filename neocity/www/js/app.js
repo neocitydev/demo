@@ -39,34 +39,167 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.actualites', {
+      url: "/actualites",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
+          templateUrl: "templates/actualites.html",
+          controller: 'ActualitesCtrl'
         }
       }
     })
-    .state('app.playlists', {
-      url: "/playlists",
+
+    .state('app.elus', {
+      url: "/elus",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/elus.html",
+          controller: 'ElusCtrl'
         }
       }
     })
 
     .state('app.single', {
-      url: "/playlists/:playlistId",
+      url: "/actualites/:actualiteId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+          templateUrl: "templates/actualite.html",
+          controller: 'ActualiteCtrl'
+        }
+      }
+    })
+
+    .state('app.urgences', {
+      url: "/urgences",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/urgences.html",
+          controller: 'UrgencesCtrl'
+        }
+      }
+    })
+
+    .state('app.numberUrgence', {
+      url: "/numberUrgence",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/numberUrgence.html",
+          controller: 'NumberUrgenceCtrl'
+        }
+      }
+    })
+
+    .state('app.singleUrg', {
+      url: "/urgences/:urgenceId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/urgence.html",
+          controller: 'UrgenceCtrl'
+        }
+      }
+    })
+
+    .state('app.mairies', {
+      url: "/mairies",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/mairies.html",
+          controller: 'MairiesCtrl'
+        }
+      }
+    })
+
+    .state('app.mairie', {
+      url: "/mairie",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/mairie.html",
+          controller: 'MairieCtrl'
+        }
+      }
+    })
+
+    .state('app.serviceSections', {
+      url: "/serviceSections",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/serviceSection.html",
+          controller: 'ServiceSectionsCtrl'
+        }
+      }
+    })
+
+    .state('app.pratiques', {
+      url: "/pratiques",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/pratiques.html",
+          controller: 'PratiquesCtrl'
+        }
+      }
+    })
+
+    .state('app.singlePratique', {
+      url: "/pratiques/:pratiqueId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/pratique.html",
+          controller: 'PratiqueCtrl'
+        }
+      }
+    })
+
+    .state('app.annuaires', {
+      url: "/annuaires",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/annuaires.html",
+          controller: 'AnnuairesCtrl'
+        }
+      }
+    })
+
+    .state('app.commerceSections', {
+      url: "/commerceSections",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/commerceSection.html",
+          controller: 'CommerceSectionsCtrl'
+        }
+      }
+    })
+
+    .state('app.associationSections', {
+      url: "/associationSections",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/associationSection.html",
+          controller: 'AssociationSectionsCtrl'
+        }
+      }
+    })
+
+    .state('app.infrastructureSections', {
+      url: "/infrastructureSections",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/infrastructureSection.html",
+          controller: 'InfrastructureSectionsCtrl'
+        }
+      }
+    })
+
+
+    .state('app.singleAnnuaire', {
+      url: "/annuaire",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/annuaire.html",
+          controller: 'AnnuaireCtrl'
         }
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/actualites');
 });
 
