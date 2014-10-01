@@ -43,7 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/actualites",
       views: {
         'menuContent' :{
-          templateUrl: "templates/actualites.html",
+          templateUrl: "templates/actualite/actualites.html",
           controller: 'ActualitesCtrl'
         }
       }
@@ -53,7 +53,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/elus",
       views: {
         'menuContent' :{
-          templateUrl: "templates/elus.html",
+          templateUrl: "templates/mairie/elus.html",
           controller: 'ElusCtrl'
         }
       }
@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/history",
       views: {
         'menuContent' :{
-          templateUrl: "templates/history.html",
+          templateUrl: "templates/mairie/history.html",
           controller: 'HistoryCtrl'
         }
       }
@@ -73,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/socialNetworks",
       views: {
         'menuContent' :{
-          templateUrl: "templates/socialNetworks.html",
+          templateUrl: "templates/mairie/socialNetworks.html",
           controller: 'SocialNetworksCtrl'
         }
       }
@@ -83,7 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/publicationSection",
       views: {
         'menuContent' :{
-          templateUrl: "templates/publicationSection.html",
+          templateUrl: "templates/mairie/publicationSection.html",
           controller: 'PublicationSectionsCtrl'
         }
       }
@@ -93,7 +93,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/actualites/:actualiteId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/actualite.html",
+          templateUrl: "templates/actualite/actualite.html",
           controller: 'ActualiteCtrl'
         }
       }
@@ -103,7 +103,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/urgences",
       views: {
         'menuContent' :{
-          templateUrl: "templates/urgences.html",
+          templateUrl: "templates/urgences/urgences.html",
           controller: 'UrgencesCtrl'
         }
       }
@@ -113,7 +113,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/numberUrgence",
       views: {
         'menuContent' :{
-          templateUrl: "templates/numberUrgence.html",
+          templateUrl: "templates/urgences/numberUrgence.html",
           controller: 'NumberUrgenceCtrl'
         }
       }
@@ -123,7 +123,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/pharmacies",
       views: {
         'menuContent' :{
-          templateUrl: "templates/pharmacies.html",
+          templateUrl: "templates/urgences/pharmacies.html",
           controller: 'PharmaciesCtrl'
         }
       }
@@ -133,7 +133,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/urgences/:urgenceId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/urgence.html",
+          templateUrl: "templates/urgences/urgence.html",
           controller: 'UrgenceCtrl'
         }
       }
@@ -143,7 +143,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/mairies",
       views: {
         'menuContent' :{
-          templateUrl: "templates/mairies.html",
+          templateUrl: "templates/mairie/mairies.html",
           controller: 'MairiesCtrl'
         }
       }
@@ -153,7 +153,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/mairie",
       views: {
         'menuContent' :{
-          templateUrl: "templates/mairie.html",
+          templateUrl: "templates/mairie/mairie.html",
           controller: 'MairieCtrl'
         }
       }
@@ -163,7 +163,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/serviceSections",
       views: {
         'menuContent' :{
-          templateUrl: "templates/serviceSection.html",
+          templateUrl: "templates/mairie/serviceSection.html",
           controller: 'ServiceSectionsCtrl'
         }
       }
@@ -173,7 +173,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/pratiques",
       views: {
         'menuContent' :{
-          templateUrl: "templates/pratiques.html",
+          templateUrl: "templates/viePratique/pratiques.html",
           controller: 'PratiquesCtrl'
         }
       }
@@ -183,7 +183,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/pratiques/:pratiqueId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/pratique.html",
+          templateUrl: "templates/viePratique/pratique.html",
           controller: 'PratiqueCtrl'
         }
       }
@@ -193,7 +193,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/annuaires",
       views: {
         'menuContent' :{
-          templateUrl: "templates/annuaires.html",
+          templateUrl: "templates/annuaire/annuaires.html",
           controller: 'AnnuairesCtrl'
         }
       }
@@ -203,7 +203,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/commerceSections",
       views: {
         'menuContent' :{
-          templateUrl: "templates/commerceSection.html",
+          templateUrl: "templates/annuaire/commerceSection.html",
           controller: 'CommerceSectionsCtrl'
         }
       }
@@ -213,7 +213,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/associationSections",
       views: {
         'menuContent' :{
-          templateUrl: "templates/associationSection.html",
+          templateUrl: "templates/annuaire/associationSection.html",
           controller: 'AssociationSectionsCtrl'
         }
       }
@@ -223,7 +223,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/infrastructureSections",
       views: {
         'menuContent' :{
-          templateUrl: "templates/infrastructureSection.html",
+          templateUrl: "templates/annuaire/infrastructureSection.html",
           controller: 'InfrastructureSectionsCtrl'
         }
       }
@@ -234,7 +234,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/annuaire",
       views: {
         'menuContent' :{
-          templateUrl: "templates/annuaire.html",
+          templateUrl: "templates/annuaire/annuaire.html",
           controller: 'AnnuaireCtrl'
         }
       }
