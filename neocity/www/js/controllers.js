@@ -58,7 +58,7 @@ angular.module('starter.controllers', [])
 
 .controller('UrgencesCtrl', function($scope) {
   $scope.urgences = [
-    { title: 'Pharmacies de garde', id: 1},
+    { title: 'Pharmacies de garde', id: 1, href:'#/app/pharmacies'},
     { title: 'Numéros d’urgence', id: 2, href:'#/app/numberUrgence'},
     { title: 'Défibrillateurs', id: 3 },
     { title: 'Gestes de premiers secours', id: 4 },
@@ -71,10 +71,10 @@ angular.module('starter.controllers', [])
   $scope.mairies = [
     { title: 'Info mairie', id: 1 , href:'#/app/mairie'},
     { title: 'Services municipaux', id: 2, href:'#/app/serviceSections'},
-    { title: 'Elus', id: 3 },
-    { title: 'Histoire de la commune', id: 4 },
-    { title: 'Publication', id: 5 },
-    { title: 'Réseaux sociaux', id: 5 },
+    { title: 'Elus', id: 3, href:'#/app/elus'},
+    { title: 'Histoire de la commune', id: 4, href:'#/app/history' },
+    { title: 'Publication', id: 5, href:'#/app/publicationSection'},
+    { title: 'Réseaux sociaux', id: 5, href:'#/app/socialNetworks '},
     { title: 'Contact', id: 6 },
   ];
 })
@@ -118,10 +118,28 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('PublicationSectionsCtrl', function($scope) {
+  $scope.publicationSections = [
+    { title: 'Publication', id: 1, href:'#/app/annuaire'},
+    { title: 'Publication', id: 2, href:'#/app/annuaire'},
+  ];
+})
+
+.controller('SocialNetworksCtrl', function($scope) {
+  $scope.socialNetworks = [
+    { title: 'Facebook', icon:"icon ion-social-facebook", id: 1, href:'#'},
+    { title: 'twitter', icon:"icon ion-social-twitter", id: 2, href:'#'},
+  ];
+})
+
 .controller('ElusCtrl', function($scope) {
-  $scope.serviceSections = [
-    { title: 'Services municipaux', id: 1, href:'#/app/annuaire'},
-    { title: 'Services municipaux', id: 2, href:'#/app/annuaire'},
+  $scope.elus = [
+    { title: 'Jean Marchandier', job:'Maire', service: 'Affaires générales', number: '01.34.34.34.34', mail: 'marchandier@mairie.fr', id: 1},
+    { title: 'Jean Marchandier', job:'Adjoints', service: 'Affaires générales', number: '01.34.34.34.34', mail: 'marchandier@mairie.fr', id: 2},
+    { title: 'Jean Marchandier', job:'Adjoints', service: 'Affaires générales', number: '01.34.34.34.34', mail: 'marchandier@mairie.fr', id: 3},
+    { title: 'Jean Marchandier', job:'Adjoints', service: 'Affaires générales', number: '01.34.34.34.34', mail: 'marchandier@mairie.fr', id: 4},
+    { title: 'Jean Marchandier', job:'Adjoints', service: 'Affaires générales', number: '01.34.34.34.34', mail: 'marchandier@mairie.fr', id: 5},
+    { title: 'Jean Marchandier', job:'Adjoints', service: 'Affaires générales', number: '01.34.34.34.34', mail: 'marchandier@mairie.fr', id: 6},
   ];
 })
 

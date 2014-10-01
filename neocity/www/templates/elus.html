@@ -5,9 +5,15 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
    <div class="list">
-      <ion ng-repeat="elu in elus" >
+      <ion ng-repeat="elu in elus">
+      <div class="item item-divider">
+          {{elu.job}}
+      </div>
        <div class="item item-button-right">
-        {{elu.title}}
+        {{elu.title}} </br>
+        {{elu.service}} </br>
+        {{elu.number}} </br>
+        {{elu.mail}} </br>
         </div>
         
       </ion>

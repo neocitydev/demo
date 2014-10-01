@@ -59,6 +59,36 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.history', {
+      url: "/history",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/history.html",
+          controller: 'HistoryCtrl'
+        }
+      }
+    })
+
+    .state('app.socialNetworks', {
+      url: "/socialNetworks",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/socialNetworks.html",
+          controller: 'SocialNetworksCtrl'
+        }
+      }
+    })
+
+    .state('app.publications', {
+      url: "/publicationSection",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/publicationSection.html",
+          controller: 'PublicationSectionsCtrl'
+        }
+      }
+    })
+
     .state('app.single', {
       url: "/actualites/:actualiteId",
       views: {
@@ -85,6 +115,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         'menuContent' :{
           templateUrl: "templates/numberUrgence.html",
           controller: 'NumberUrgenceCtrl'
+        }
+      }
+    })
+
+    .state('app.pharmacies', {
+      url: "/pharmacies",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/pharmacies.html",
+          controller: 'PharmaciesCtrl'
         }
       }
     })
