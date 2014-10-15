@@ -3,6 +3,9 @@
     <button menu-toggle="right" class="button button-icon icon ion-loop"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <h3>Enlèvement du Lorem Ispum par les bandits de grand chemins</h3>
+    <h3>{{actualite.title}}</h3>
+    		{{actualite.date | date:"MM/dd/yyyy 'at' h:mma"}}<br/>
+    		<img style="width:611px;height:253px" src="cover.jpg">
+          <p>{{actualite.description}}</p>
   </ion-content>
 </ion-view>

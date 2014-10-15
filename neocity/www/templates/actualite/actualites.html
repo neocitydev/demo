@@ -7,8 +7,11 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="actualite in actualites" href="#/app/actualites/{{actualite.id}}">
-        {{actualite.title}}
+      <ion-item ng-repeat="actualite in actualites" href="#/app/actualites/{{actualite.id}}" class="item-thumbnail-left">
+          <img src="cover.jpg">
+          {{actualite.date | date:"MM/dd/yyyy 'at' h:mma"}}
+          <h2>{{actualite.title}}</h2>
+          <p>{{actualite.description}}</p>
       </ion-item>
     </ion-list>
   </ion-content>
