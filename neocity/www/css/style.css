@@ -1,27 +1,62 @@
+/*general config*/
+@font-face {
+    font-family: opensans;
+    src: url(opensans-regular-webfont.woff);
+}
+
 @font-face {
     font-family: neocity-menu-font;
     src: url(neocity-menu-font.woff);
 }
 
-.custom-left-menu{
+body{
+	font-family: opensans;
+}
+
+
+/* left menu*/
+
+.neocity-left-menu{
 	background-color: #353535 !important;
 	border: 0px solid #303030 !important;
 }
 
-.item-complex .item-content, .item-radio .item-content{
-	background-color: transparent;
+.neocity-left-menu .title{
+	color:#fff !important;
+	font-weight: bold;
+	font-family: opensans;
 }
 
-.custom-menu-item{
+.neocity-menu-item{
 	background-color: #353535 !important;
 	color: #fff !important;
 	border: 1px solid #303030 !important;	
 }
 
-.custom-white{
+.neocity-menu-item .menu-icon{
+	font-family: neocity-menu-font;
+	float: left;
+	margin-right: 5px;
+}
+
+.neocity-menu-item .menu-title{
+	float: left;
+}
+
+.neocity-menu-item:hover{
+	background-color: #225DB7 !important;
 	color: #fff !important;
 }
 
+/*principal page*/
+
+.neocity-white{
+	color: #fff !important;
+}
+
+.item-complex .item-content, .item-radio .item-content{
+	background-color: transparent;
+}
 
 .bar.bar-stable
 {
@@ -29,21 +64,56 @@
 		
 }
 
-.bar.bar-stable .title{
+
+.bar.bar-stable .title
+{
+	color:#fff !important;
 	font-weight: bold;
-	color: #fff;
-}
-.menu-icon{
-	font-family: neocity-menu-font;
-	float: left;
-	margin-right: 5px;
+	font-family: opensans;
+		
 }
 
-.menu-title{
-	float: left;
+
+
+/*actualite*/
+
+.neocity-actualite{
+	border-color: #bcbcbc;
 }
 
-.custom-menu-item:hover{
-	background-color: #225DB7 !important;
-	color: #fff !important;
+.neocity-actualite .date{
+	font-weight: bold;
+	color: #225DB7;
+	font-size: 12px;
+}
+
+.neocity-actualite .title{
+	font-weight: bold;
+	color: #373737;
+	font-size: 16px;
+}
+
+.neocity-actualite-detail .title{
+	font-weight: bold;
+	color: #373737;
+	font-size: 18px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.neocity-actualite-detail .date{
+	font-weight: bold;
+	color: #225DB7;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.neocity-actualite-detail .image{
+	margin-left: 5px;
+	width: 95%;
+	height: 250px;
+}
+
+.neocity-actualite-detail .content{
+	margin-left: 5px;
 }
