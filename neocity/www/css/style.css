@@ -117,3 +117,39 @@ body{
 .neocity-actualite-detail .content{
 	margin-left: 5px;
 }
+
+/*************mairie*******************/
+
+.neocity-mairie-detail .neocity-row{
+	height: 40px;
+	border-bottom: 1px solid #bcbcbc ;
+}
+.neocity-mairie-detail .title{
+	font-weight: bold;
+	color: #373737;
+	font-size: 18px;
+	margin-left: 5px;
+	margin-top: 10px;
+	
+}
+
+.neocity-mairie-detail .adresseTitle, .neocity-mairie-detail .phoneTitle, .neocity-mairie-detail .mailTitle{
+	font-weight: bold;
+	color: #225DB7;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+
+.neocity-mairie-detail .adresseContent ,.neocity-mairie-detail .phoneContent,.neocity-mairie-detail .mailContent{
+	font-weight: bold;
+	color: #373737;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+.neocity-mairie-detail .content{
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
