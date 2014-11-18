@@ -48,12 +48,21 @@ body{
 	color: #fff !important;
 }
 
+.menu .scroll-content{
+	background-color: #303030 !important;
+}
+
 /*principal page*/
 
 .neocity-white{
 	color: #fff !important;
 }
-
+.neocity-gary{
+	color: #353535 !important;
+}
+.neocity-green{
+	color: green !important;
+}
 .item-complex .item-content, .item-radio .item-content{
 	background-color: transparent;
 }
@@ -122,7 +131,8 @@ body{
 
 .neocity-item-detail .neocity-row{
 	height: 40px;
-	border-bottom: 1px solid #bcbcbc ;
+	border-bottom: 1px solid #bcbcbc;
+	padding: 5px;
 }
 .neocity-item-detail .title{
 	font-weight: bold;
