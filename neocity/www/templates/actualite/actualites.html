@@ -9,9 +9,8 @@
     <ion-list>
       <ion-item ng-repeat="actualite in actualites" href="#/app/actualites/{{actualite.id}}" class="item-thumbnail-left neocity-actualite">
           <img src="cover.jpg">
-          <h2 class="date">{{actualite.date | date:"MM/dd/yyyy 'at' h:mma"}}</h2>
+          <h2 class="date">{{actualite.date | date:"MM/dd/yyyy"}}</h2>
           <h2 class="title">{{actualite.title}}</h2>
-          <p class="content">{{actualite.description}}</p>
       </ion-item>
     </ion-list>
   </ion-content>

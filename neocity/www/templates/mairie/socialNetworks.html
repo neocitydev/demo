@@ -1,8 +1,4 @@
 <ion-view title="Réseaux Sociaux">
-  
-  <ion-nav-buttons side="right">
-    <button menu-toggle="right" class="button button-icon icon ion-loop neocity-white"></button>
-  </ion-nav-buttons>
   <ion-content class="has-header">
    <div class="list">
       <ion ng-repeat="socialNetwork in socialNetworks" >
@@ -10,8 +6,7 @@
     <i class={{socialNetwork.icon}}></i>
     {{socialNetwork.title}}
     <i class="icon ion-chevron-right neocity-gary"></i>
-  </a>
-        
+  </a>    
       </ion>
     </div>
   </ion-content>
