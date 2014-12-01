@@ -31,6 +31,7 @@ body{
 	background-color: #353535 !important;
 	color: #fff !important;
 	border: 1px solid #303030 !important;	
+	width: 300px;
 }
 
 .neocity-menu-item .menu-icon{
@@ -57,12 +58,14 @@ body{
 .neocity-white{
 	color: #fff !important;
 }
-.neocity-gary{
+.neocity-gray{
 	color: #353535 !important;
 }
 .neocity-green{
 	color: green !important;
 }
+
+
 .item-complex .item-content, .item-radio .item-content{
 	background-color: transparent;
 }
@@ -167,4 +170,13 @@ body{
 	font-family: neocity-menu-font;
 	float: left;
 	margin-right: 5px;
+}
+
+.ion-social-facebook,.ion-social-facebook  + div{
+	color : #3b5998;
+}
+
+.ion-social-twitter ,.ion-social-twitter  + div
+{
+	color:#55ACEE;
 }
