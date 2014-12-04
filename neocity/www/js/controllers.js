@@ -53,10 +53,10 @@ angular.module('starter.controllers', [])
 
 .controller('NumberUrgenceCtrl', function($scope) {
   $scope.numberUrgences = [
-    { title: 'Pompiers 18', id: 1 },
-    { title: 'Police 17', id: 2 },
-    { title: 'Urgences 01.39.55.00.55', id: 3 },
-    { title: 'Urgences Enfants 01.00.66.46.90', id: 4 }
+    { title: 'Pompiers', number: '18', id: 1 },
+    { title: 'Police', number: '17', id: 2 },
+    { title: 'Urgences', number: '01.39.55.00.55', id: 3 },
+    { title: 'Urgences Enfants', number: '01.00.66.46.90', id: 4 }
   ];
 })
 

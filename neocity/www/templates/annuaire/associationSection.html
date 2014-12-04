@@ -1,9 +1,12 @@
 <ion-view title="Association Section">
   <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="associationSection in associationSections" href="{{associationSection.href}}">
-        {{associationSection.title}}
-      </ion-item>
-    </ion-list>
+   <div class="list">
+      <ion ng-repeat="associationSection in associationSections" >
+        <a class="item item-icon-right" href="{{associationSection.href}}">
+          {{associationSection.title}}
+          <i class="icon ion-chevron-right neocity-gary"></i>
+      </a>    
+      </ion>
+    </div>
   </ion-content>
 </ion-view>

@@ -1,9 +1,12 @@
 <ion-view title="Infrastructure Section">
   <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="infrastructureSection in infrastructureSections" href="{{infrastructureSection.href}}">
-        {{infrastructureSection.title}}
-      </ion-item>
-    </ion-list>
+   <div class="list">
+      <ion ng-repeat="infrastructureSection in infrastructureSections" >
+        <a class="item item-icon-right" href="{{infrastructureSection.href}}">
+          {{infrastructureSection.title}}
+          <i class="icon ion-chevron-right neocity-gary"></i>
+      </a>    
+      </ion>
+    </div>
   </ion-content>
 </ion-view>

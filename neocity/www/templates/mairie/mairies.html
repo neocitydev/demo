@@ -3,10 +3,13 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon neocity-white"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="mairie in mairies" href="{{mairie.href}}" >
-        {{mairie.title}} 
-      </ion-item>
-    </ion-list>
+   <div class="list">
+      <ion ng-repeat="mairie in mairies" >
+       <a class="item item-icon-right" href="{{mairie.href}}">
+        {{mairie.title}}
+        <i class="icon ion-chevron-right neocity-gary"></i>
+      </a>    
+      </ion>
+    </div>
   </ion-content>
 </ion-view>

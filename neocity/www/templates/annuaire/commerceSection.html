@@ -1,9 +1,12 @@
 <ion-view title="Commerce Section">
   <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="commerceSection in commerceSections" href="{{commerceSection.href}}">
-        {{commerceSection.title}}
-      </ion-item>
-    </ion-list>
+   <div class="list">
+      <ion ng-repeat="commerceSection in commerceSections" >
+        <a class="item item-icon-right" href="{{commerceSection.href}}">
+          {{commerceSection.title}}
+          <i class="icon ion-chevron-right neocity-gary"></i>
+      </a>    
+      </ion>
+    </div>
   </ion-content>
 </ion-view>

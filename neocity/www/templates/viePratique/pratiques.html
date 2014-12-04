@@ -3,10 +3,16 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon neocity-white"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <ion-list>
-      <ion-item ng-repeat="pratique in pratiques" href="#/app/pratiques/{{pratique.id}}">
+   <div class="list">
+      <ion ng-repeat="pratique in pratiques" >
+       <a class="item item-icon-right" href="#/app/pratiques/{{pratique.id}}">
         {{pratique.title}}
-      </ion-item>
-    </ion-list>
+        <i class="icon ion-chevron-right neocity-gary"></i>
+      </a>    
+      </ion>
+    </div>
   </ion-content>
 </ion-view>
+
+
+
